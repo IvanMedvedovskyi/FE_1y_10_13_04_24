@@ -9,7 +9,51 @@
 </head>
 
 <body>
-    <p>Initial commit tested</p>
+    <main>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews-title">chocolate <span>is loved</span></h2>
+                <div class="reviews-box">
+                <ul class="reviews-list">
+                    <li class="reviews-item">
+                        <img class="customer-photo" src="./images/vd@2.png" alt="customer photo" srcset="./images/vd@1.png 1x, ./images/vd@2.png 2x">
+                        <h3 class="customer-name">Victoria Dobrzhanska</h3>
+                        <p class="customer-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+                    </li>
+                    <li class="reviews-item">
+                        <img class="customer-photo" src="./images/nb@2.png" alt="customer photo" srcset="./images/nb@1.png 1x, ./images/nb@1.png 2x">
+                        <h3 class="customer-name">Nazar Babenko</h3>
+                        <p class="customer-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                    </li>
+                    <li class="reviews-item">
+                        <img class="customer-photo" src="./images/ok@2.png" alt="customer photo" srcset="./images/ok@1.png 1x, ./images/ok@2.png 2x">
+                        <h3 class="customer-name">Olena Kampusch</h3>
+                        <p class="customer-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+                    </li>
+                </ul>
+                <ul class="reviews-scroll-sircles">
+                    <li class="reviews-scroll-sircles-item active-circle"></li>
+                    <li class="reviews-scroll-sircles-item"></li>
+                    <li class="reviews-scroll-sircles-item"></li>
+                    <li class="reviews-scroll-sircles-item"></li>
+                </ul>
+            </div>
+            <button class="reviews-button" type="button">Leave  a review</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="review-backdrop">
+        <img class="close" src="./images/x-close.svg" alt="X">
+        <h2 class="review-backdrop-title"><span>LEAVE A REVIEW ABOUT</span> OUR CHOCOLATE</h2>
+        <form class="review-backdrop-form">
+            <input type="text" placeholder="Name" autocomplete="off">
+            <input type="email" placeholder="Email" autocomplete="off">
+            <input type="number" placeholder="Phone number" autocomplete="off">
+            <textarea class="review-backdrop-textarea" placeholder="Enter text" autocomplete="off"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 
 </html>
