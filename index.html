@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/reviewsbg.js" defer></script>
 </head>
 
 <body>
@@ -38,22 +39,29 @@
                     <li class="reviews-scroll-sircles-item"></li>
                 </ul>
             </div>
-            <button class="reviews-button" type="button">Leave  a review</button>
+            <button class="reviews-button" type="button" data-modal-open>Leave  a review</button>
             </div>
         </section>
     </main>
-
+    <div class="reviews-absolute is-hidden" data-modal>
     <div class="review-backdrop">
-        <img class="close" src="./images/x-close.svg" alt="X">
+        <img class="close" src="./images/x-close.svg" alt="X" data-modal-close>
         <h2 class="review-backdrop-title"><span>LEAVE A REVIEW ABOUT</span> OUR CHOCOLATE</h2>
         <form class="review-backdrop-form">
-            <input type="text" placeholder="Name" autocomplete="off">
-            <input type="email" placeholder="Email" autocomplete="off">
-            <input type="number" placeholder="Phone number" autocomplete="off">
+            <input class="review-backdrop-form-input" type="text" placeholder="Name" maxlength="20" autocomplete="off" required>
+            <input class="review-backdrop-form-input" type="email" placeholder="Email" autocomplete="off" required>
+            <label for="phonenum" class="phonenum">
+                <div class="numinput">
+                 <img src="./images/uaflag.svg" alt="UA">   
+                 <p>+380</p>
+                </div>
+                <input class="review-backdrop-form-input" id="phonenum" type="number" placeholder="Phone number" autocomplete="off" required>
+            </label>
             <textarea class="review-backdrop-textarea" placeholder="Enter text" autocomplete="off"></textarea>
-            <button type="submit">Send</button>
+            <button class="review-backdrop-button" type="submit">Send</button>
         </form>
     </div>
+</div>
 </body>
 
 </html>
