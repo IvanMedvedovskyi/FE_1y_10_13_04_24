@@ -413,6 +413,33 @@ input[type=number]::-webkit-outer-spin-button {
   .review-backdrop-title {
     font-size: 22px;
   }
+  .review-backdrop-form-input {
+    font-size: 16px;
+  }
+  .review-backdrop-form-input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .review-backdrop-form-input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .review-backdrop-form-input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .review-backdrop-form-input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .review-backdrop-form-input::placeholder {
+    font-size: 16px;
+  }
+  .review-backdrop-form .phonenum {
+    padding: 14px 18px;
+  }
+  .review-backdrop-form .phonenum input {
+    padding-right: 0;
+  }
+  .review-backdrop-form .numinput {
+    gap: 10px;
+  }
 }
 @media (max-width: 425px) {
   .review-backdrop {
@@ -424,33 +451,18 @@ input[type=number]::-webkit-outer-spin-button {
     right: 14px;
   }
   .review-backdrop-title {
+    max-width: 255px;
     font-size: 20px;
-    max-width: 250px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
   }
   .review-backdrop-form-input {
     padding: 14px 18px;
-    font-size: 14px;
-  }
-  .review-backdrop-form-input::-webkit-input-placeholder {
-    font-size: 14px;
-  }
-  .review-backdrop-form-input::-moz-placeholder {
-    font-size: 14px;
-  }
-  .review-backdrop-form-input:-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .review-backdrop-form-input::-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .review-backdrop-form-input::placeholder {
-    font-size: 14px;
-  }
-  .review-backdrop-form .phonenum {
-    padding: 14px 18px;
   }
   .review-backdrop-form .phonenum input {
-    padding-left: 5px;
+    padding-left: 10px;
   }
   .review-backdrop-form .numinput {
     font-size: 14px;
