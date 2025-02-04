@@ -162,7 +162,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
     &-form{
         max-width: 517px;
-        &-input{
+        &-input{            
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.03);
             width: 100%;
             padding: 22px 24px;
             outline: none;
@@ -194,6 +195,7 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
         .phonenum{
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.03);
             display: flex;
             align-items: center;
             background-color:$white;
@@ -202,6 +204,9 @@ input[type=number]::-webkit-outer-spin-button {
             border-radius: 13px;
             margin-bottom: 19px;
             transition:border 150ms ease-in-out;
+            input{
+                box-shadow: none;
+            }
             &:hover,&:focus{
                 border: 1.5px solid $accent-color;
             }

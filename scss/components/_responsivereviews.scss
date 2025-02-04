@@ -27,6 +27,10 @@
     .review-backdrop{
         padding-inline: 20px;
         padding-block: 40px;
+        .close{
+            top: 14px;
+            right: 14px;
+        }
         &-title{
             font-size: 20px;
             max-width: 250px;
@@ -34,11 +38,13 @@
         &-form{
             &-input{
                 padding: 14px 18px;
+                font-size: 14px;
+                &::placeholder{
+                    font-size: 14px;
+                }
             }
             .phonenum{
                 padding: 14px 18px;
-                gap: 8px;
-                padding-right: 5px;
                 input{
                     padding-left: 5px;
                 }
@@ -48,6 +54,14 @@
                     width: 24px;
                     height: 18px;
                 }
+                font-size: 14px;
+                gap: 8px;
+                padding-right: 5px;
+            }
+        }
+        &-textarea{
+            font-size: 14px;
+            &::placeholder{
                 font-size: 14px;
             }
         }
