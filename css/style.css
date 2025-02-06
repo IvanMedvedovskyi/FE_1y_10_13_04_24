@@ -66,22 +66,26 @@ input[type=number]::-webkit-outer-spin-button {
   color: #111;
 }
 .reviews-list {
+  height: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  overflow-x: auto;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 28px;
   margin-bottom: 32px;
 }
+.reviews-list::-webkit-scrollbar {
+  display: none;
+}
 .reviews-item {
   text-align: center;
-  max-width: 360px;
-  min-width: 300px;
+  min-width: 360px;
   border-radius: 15px;
   padding: 56px 24px 26px 24px;
   min-height: 200px;
@@ -399,16 +403,6 @@ input[type=number]::-webkit-outer-spin-button {
           transform: translate(-50%, 200px);
 }
 
-@media (max-width: 1185px) {
-  .reviews-item:last-child {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .reviews-item:nth-child(2) {
-    display: none;
-  }
-}
 @media (max-width: 500px) {
   .review-backdrop-title {
     font-size: 22px;
@@ -442,6 +436,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 @media (max-width: 425px) {
+  .reviews-item {
+    min-width: 100%;
+  }
   .review-backdrop {
     padding-inline: 20px;
     padding-block: 40px;
