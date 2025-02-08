@@ -58,4 +58,37 @@
   line-height: 16px;
   letter-spacing: -2%;
   color: #111111;
+}
+
+.main_container {
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto;
+}
+.main_first--title {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+  color: white;
+  margin-bottom: 32px;
+  padding-top: 381px;
+  max-width: 484px;
+}
+.main_first--section .main_container {
+  background-image: url(/images/main-first-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+.main_first--wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+.main_first--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

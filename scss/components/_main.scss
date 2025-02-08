@@ -1,0 +1,43 @@
+.main {
+    &_container {
+        width: 100%;
+        max-width: 1136px;
+        margin: 0 auto;
+    }
+
+    &_first {
+        &--title {
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 34px;
+            letter-spacing: -0.03em;
+            color: white;
+            margin-bottom: 32px;
+            padding-top: 381px;
+            max-width: 484px;
+        }
+
+        &--section {
+            .main_container {
+                background-image: url(/images/main-first-back.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 30px;
+                
+            }
+        }
+
+        &--wrapper {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+        }
+
+        &--content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
