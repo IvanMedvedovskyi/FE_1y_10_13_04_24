@@ -1,21 +1,4 @@
-// @media (max-width:1185px){
-//     .reviews{
-//         &-item{
-//             &:last-child{
-//                 display: none;
-//             }
-//         }
-//     }
-// }
-// @media (max-width:768px){
-//     .reviews{
-//         &-item{
-//             &:nth-child(2){
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+@import "./variablesreviews";
 @media (max-width:500px){
     .review-backdrop{
         &-title{
