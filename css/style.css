@@ -2,8 +2,60 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.header_container {
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_left {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.header_left--logo {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #111111;
+}
+.header_left--logo--span {
+  font-style: italic;
+  padding-right: 2px;
+}
+.header_right {
+  display: flex;
+  gap: 137px;
+  align-items: center;
+}
+.header_right--part:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header_right--list {
+  display: flex;
+  gap: 24px;
+}
+.header_right--list--link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -2%;
+  color: #111111;
 }/*# sourceMappingURL=style.css.map */
