@@ -134,4 +134,45 @@
   line-height: 18px;
   letter-spacing: -3%;
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.main_second--section {
+  background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main_second--cards {
+  display: flex;
+  justify-content: space-between;
+}
+.main_second--cards--title {
+  margin-top: 22px;
+  margin-bottom: 18px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 0%;
+  color: white;
+}
+.main_second--cards--text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 0.6980392157);
+  max-width: 310px;
+}
+.main_second--cards--item {
+  position: relative;
+  padding-right: 18px;
+}
+.main_second--cards--line {
+  position: absolute;
+  width: 1px;
+  height: 124px;
+  right: 0;
+  top: 60px;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+/*# sourceMappingURL=style.css.map */
