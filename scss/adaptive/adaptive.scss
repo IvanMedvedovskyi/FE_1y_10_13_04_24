@@ -1,10 +1,22 @@
-@media screen and (max-width: 1160px){
-  main{
-    &--fith{
-      &--section{
-        &--images{
+@media screen and (max-width: 1160px) {
+  .main {
+    &_fifth {
+      &--section {
+        &--images {
           display: grid;
-          grid-template-columns: ;
+          grid-template-areas:
+            "first-image"
+            "second-image"
+            "third-image";
+          &--element:nth-child(1) {
+            grid-area: first-image;
+          }
+          &--element:nth-child(2) {
+            grid-area: second-image;
+          }
+          &--element:nth-child(3) {
+            grid-area: third-image;
+          }
         }
       }
     }

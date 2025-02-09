@@ -1,6 +1,15 @@
 @media screen and (max-width: 1160px) {
-  main--fith--section--images {
+  .main_fifth--section--images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "first-image" "second-image" "third-image";
+  }
+  .main_fifth--section--images--element:nth-child(1) {
+    grid-area: first-image;
+  }
+  .main_fifth--section--images--element:nth-child(2) {
+    grid-area: second-image;
+  }
+  .main_fifth--section--images--element:nth-child(3) {
+    grid-area: third-image;
   }
 }/*# sourceMappingURL=adaptive.css.map */
