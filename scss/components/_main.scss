@@ -134,4 +134,31 @@
       }
     }
   }
+  &_forth {
+    &--section {
+      .main_container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &--title {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -3%;
+      text-align: center;
+      color: #111111;
+      margin-bottom: 50;
+      span {
+        color: #fd9222;
+      }
+    }
+    &--content {
+      display: flex;
+      gap: 52px;
+      align-items: center;
+    }
+  }
 }
