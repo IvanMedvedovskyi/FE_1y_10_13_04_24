@@ -35,7 +35,6 @@
   .main {
     &_fifth {
       &--section {
-    
         &--images {
           display: grid;
           grid-template-areas:
@@ -47,7 +46,7 @@
           flex-direction: column;
           align-items: center;
           gap: 36px;
-          &--text{
+          &--text {
             text-align: center;
           }
         }
@@ -57,14 +56,58 @@
 }
 
 @media screen and (max-width: 400px) {
-  .main{
-    &_fifth{
-      &--section{
-        &--desktop{
+  .main {
+    &_fifth {
+      &--section {
+        &--desktop {
           display: none;
         }
-        &--mobile{
+        &--mobile {
           display: block;
+
+          &--header {
+            margin-bottom: 32px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -3%;
+            text-align: center;
+            color: black;
+            span {
+              color: #fd9222;
+            }
+          }
+
+          &--images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--text {
+              margin-top: 20px;
+              margin-bottom: 32px;
+              max-width: 306px;
+              font-family: Montserrat;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: -2%;
+              color: #111111;
+            }
+          }
+
+          &--image {
+            width: 100%;
+            max-width: 335px;
+            height: 464px;
+          }
+
+          &--button--wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+          }
         }
       }
     }
