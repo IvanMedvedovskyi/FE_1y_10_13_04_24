@@ -40,4 +40,15 @@
             align-items: center;
     gap: 36px;
   }
+  .main_fifth--section--bottom--text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_fifth--section--desktop {
+    display: none;
+  }
+  .main_fifth--section--mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=adaptive.css.map */
