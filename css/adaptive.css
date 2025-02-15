@@ -76,6 +76,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .main_fifth--section--mobile--images img {
+    width: 100%;
+    max-width: 305px;
+  }
   .main_fifth--section--mobile--images--text {
     margin-top: 20px;
     margin-bottom: 32px;
