@@ -1,59 +1,62 @@
-.main {
-  &_container {
-    width: 100%;
-    max-width: 1136px;
-    margin: 0 auto;
+.main_container {
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto;
+}
+
+.main_fifth--section {
+  &--mobile{
+    display: none;
   }
-  &_fifth {
-    &--section {
-      &--header {
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: -0.03em;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #111111;
-        &--span {
-          color: #fd9222;
-        }
-      }
-      &--images {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 50px;
-        margin-bottom: 32px;
+  &--header {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111111;
 
-        img {
-          width: 368px;
-          height: 464px;
-        }
-      }
-      &--bottom {
-        display: flex;
+    &--span {
+      color: #fd9222;
+    }
+  }
 
-        &--text {
-          width: 100%;
-          max-width: 407px;
-          color: #111111;
-          font-family: Montserrat;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18px;
-          letter-spacing: -0.02em;
-        }
-        &--button {
-          width: 162px;
-          height: 50px;
-          color: #ffffff;
-          background-color: #fd9222;
-          border-radius: 100px;
-          margin-left: 576px;
-          border: none;
-        }
-      }
+  &--images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 32px;
+
+    img {
+      width: 368px;
+      height: 464px;
+    }
+  }
+
+  &--bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &--text {
+      max-width: 407px;
+      color: #111111;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    &--button {
+      width: 162px;
+      height: 50px;
+      color: #ffffff;
+      background-color: #fd9222;
+      border-radius: 100px;
+      border: none;
     }
   }
 }
