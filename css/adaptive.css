@@ -23,6 +23,9 @@
   }
 }
 @media screen and (max-width: 710px) {
+  .main_fifth {
+    position: relative;
+  }
   .main_fifth--section--images {
     display: grid;
     grid-template-areas: "first-image" "second-image";

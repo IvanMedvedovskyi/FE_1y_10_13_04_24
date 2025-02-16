@@ -5,7 +5,8 @@
 }
 
 .main_fifth--section {
-  &--mobile{
+  position: relative;
+  &--mobile {
     display: none;
   }
   &--header {
@@ -57,6 +58,24 @@
       background-color: #fd9222;
       border-radius: 100px;
       border: none;
+    }
+  }
+
+  &--order {
+    &--modal {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 609px;
+      height: 1058px;
+      border-radius: 15px;
+      border: 3px solid brown;
+
+      &--container {
+        width: 100%;
+        max-width: 513px;
+        margin: 0 auto;
+      }
     }
   }
 }
