@@ -1,3 +1,27 @@
+
+@media screen and (max-width: 1140px) {
+    .main {
+        &_second {
+            &--cards {
+                display: grid;
+                grid-template-columns: repeat(2, 326px);
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        &_second {
+            &--cards {
+                grid-template-columns: repeat(1, 326px);
+                gap: 50px;
+            }
+        }
+    }
+
 @media screen and (max-width: 415px) {
     .main {
         &_first {
@@ -8,4 +32,5 @@
             }
         }
     }
+
 }
