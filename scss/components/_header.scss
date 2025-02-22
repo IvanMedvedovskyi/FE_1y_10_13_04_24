@@ -60,9 +60,11 @@
   }
 
   &_mobile {
-    display: none;
-
     &--menu {
+      display: none;
+    }
+
+    &--menu--list {
       position: fixed;
       right: 0;
       background-color: #2196f3;

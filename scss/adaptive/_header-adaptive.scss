@@ -1,15 +1,13 @@
-@media screen and (max-width:1015px){
-    .header{
-        &_mobile--menu{
-            display: block;
-
-        }
-        &_right--part{
-            display: none;
-            &:nth-child(2){
-                display: none;
-            }
-        }
+@media screen and (max-width: 1015px) {
+  .header {
+    &_mobile--menu {
+      display: block;
     }
+    &_right--part {
+      display: none;
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
 }
-
