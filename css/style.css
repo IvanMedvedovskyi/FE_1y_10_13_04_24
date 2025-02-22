@@ -59,7 +59,43 @@
   letter-spacing: -2%;
   color: #111111;
 }
+.header_mobile--menu {
+  display: none;
+}
+.header_mobile--menu--list {
+  position: fixed;
+  right: 0;
+  background-color: #2196f3;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 2s ease-in-out;
+}
+.header_mobile--menu--list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.header_mobile--menu--list ul a {
+  color: white;
+}
 
+@media screen and (max-width: 1015px) {
+  .header_mobile--menu {
+    display: block;
+  }
+  .header_right--part {
+    display: none;
+  }
+  .header_right--part:nth-child(2) {
+    display: none;
+  }
+}
 .main_container {
   width: 100%;
   max-width: 1136px;
@@ -106,7 +142,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17.07px;
-  letter-spacing: 0%;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -121,7 +156,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17.07px;
-  letter-spacing: 0%;
   color: white;
   outline: none;
   cursor: pointer;
@@ -155,7 +189,6 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 21.94px;
-  letter-spacing: 0%;
   color: white;
 }
 .main_second--cards--text {
@@ -163,7 +196,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17.07px;
-  letter-spacing: -2%;
   color: rgba(255, 255, 255, 0.6980392157);
   max-width: 310px;
 }
@@ -199,7 +231,7 @@
   max-width: 411px;
   margin-bottom: 28px;
 }
-.main_third--title--span {
+.main_third--title span {
   color: #fd9222;
 }
 .main_third--text {
@@ -227,42 +259,93 @@
 }
 .main_third--cards--element:nth-child(1) {
   background-color: #fd9222;
-  padding: 28px 36px 28px 28px;
+  padding: 28px 36px;
   border-radius: 15px;
   color: #ffffff;
 }
 .main_third--cards--element:nth-child(2) {
-  display: inline-block;
-  padding: 10px;
+  padding: 28px 36px;
   border: 2px solid orange;
   border-radius: 15px;
-  padding: 28px 36px 28px 28px;
 }
 .main_third--cards--element:nth-child(3) {
   background-color: #1E1823;
-  padding: 28px 36px 28px 28px;
+  padding: 28px 36px;
   border-radius: 15px;
   color: #ffffff;
 }
 .main_third--cards--element:nth-child(4) {
-  display: inline-block;
-  padding: 10px;
+  padding: 28px 36px;
   border: 2px solid orange;
   border-radius: 15px;
-  padding: 28px 36px 28px 28px;
+}
+.main_forth--section .main_container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.main_forth--title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 50px;
+}
+.main_forth--title span {
+  color: #fd9222;
+}
+.main_forth--content {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.main_forth--right {
+  width: 516px;
+  height: 400px;
+  border-radius: 15px;
+}
+.main_forth--right--title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 350px;
+  margin-bottom: 28px;
+}
+.main_forth--right--list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main_forth--right--list li {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+.main_forth--right--list li:not(:nth-child(2)):not(:nth-child(4)) img {
+  padding-top: 8px;
+}
+.main_forth--right--list li:nth-child(2), .main_forth--right--list li:nth-child(4) {
+  align-items: center;
+}
+.main_forth--right--list li p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 430px;
+}
+.main_forth--grey--block {
+  width: 100%;
+  height: 51px;
+  background-color: #D9D9D9;
+  margin-bottom: 41px;
 }
 
-@media screen and (max-width: 1140px) {
-  .main_second--cards {
-    display: grid;
-    grid-template-columns: repeat(2, 326px);
-    justify-content: center;
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .main_second--cards {
-    grid-template-columns: repeat(1, 326px);
-    gap: 50px;
+
   }
 }/*# sourceMappingURL=style.css.map */
