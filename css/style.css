@@ -344,4 +344,12 @@
   height: 51px;
   background-color: #D9D9D9;
   margin-bottom: 41px;
+}
+
+@media screen and (max-width: 415px) {
+  .main_first--content--left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
