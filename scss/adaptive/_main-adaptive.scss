@@ -27,7 +27,7 @@
   .main {
     &_second {
       &--cards {
-        grid-template-columns: repeat(1, 326px);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
 
         &--item {

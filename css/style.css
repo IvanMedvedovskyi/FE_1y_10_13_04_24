@@ -454,7 +454,7 @@
 }
 @media screen and (max-width: 700px) {
   .main_second--cards {
-    grid-template-columns: repeat(1, 326px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 50px;
   }
   .main_second--cards--item {
