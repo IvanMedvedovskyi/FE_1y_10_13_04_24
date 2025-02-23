@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+  .main {
+    &_third {
+      &--cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .main {
     &_second {
@@ -17,6 +29,31 @@
       &--cards {
         grid-template-columns: repeat(1, 326px);
         gap: 50px;
+
+        &--item {
+          padding-left: 25px;
+          padding-right: 0px;
+        }
+
+        &--line {
+          display: none;
+        }
+
+        &--item:not(:last-child) {
+          border-bottom: 2px solid gray;
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .main {
+      &_third {
+        &--cards {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
     }
   }
