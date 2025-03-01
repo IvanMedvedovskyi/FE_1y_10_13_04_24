@@ -189,6 +189,7 @@
         &--hover {
           transform: rotateY(180deg);
           background-color: transparent;
+          padding: 0 28px 28px 28px;
 
           &--title {
             font-family: Montserrat;
@@ -283,6 +284,12 @@
           padding: 28px 36px;
           border: 2px solid orange;
           border-radius: 15px;
+
+          &:hover {
+            background-color: white;
+            border: 0;
+            // transition: background-color 1s linear;
+          }
         }
 
         &:nth-child(3) {
@@ -290,12 +297,29 @@
           padding: 28px 36px;
           border-radius: 15px;
           color: #ffffff;
+          
+          &:hover {
+            background-color: white;
+            // transition: background-color 1s linear;
+          }
         }
 
         &:nth-child(4) {
           padding: 28px 36px;
           border: 2px solid orange;
           border-radius: 15px;
+
+          .main_third--cards--element--hover--btns {
+            button:first-child {
+              width: 114px;
+            }
+          }
+
+          &:hover {
+            background-color: white;
+            border: 0;
+            // transition: background-color 1s linear;
+          }
         }
       }
     }

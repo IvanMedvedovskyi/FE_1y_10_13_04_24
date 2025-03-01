@@ -352,6 +352,7 @@
 .main_third--cards--element--hover {
   transform: rotateY(180deg);
   background-color: transparent;
+  padding: 0 28px 28px 28px;
 }
 .main_third--cards--element--hover--title {
   font-family: Montserrat;
@@ -435,16 +436,30 @@
   border: 2px solid orange;
   border-radius: 15px;
 }
+.main_third--cards--element:nth-child(2):hover {
+  background-color: white;
+  border: 0;
+}
 .main_third--cards--element:nth-child(3) {
   background-color: #1e1823;
   padding: 28px 36px;
   border-radius: 15px;
   color: #ffffff;
 }
+.main_third--cards--element:nth-child(3):hover {
+  background-color: white;
+}
 .main_third--cards--element:nth-child(4) {
   padding: 28px 36px;
   border: 2px solid orange;
   border-radius: 15px;
+}
+.main_third--cards--element:nth-child(4) .main_third--cards--element--hover--btns button:first-child {
+  width: 114px;
+}
+.main_third--cards--element:nth-child(4):hover {
+  background-color: white;
+  border: 0;
 }
 .main_forth--section .main_container {
   flex-direction: column;
