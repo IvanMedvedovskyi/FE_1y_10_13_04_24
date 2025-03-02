@@ -1,68 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <main class="main">
-    <section class="main_fifth--section">
-      <div class="main_container">
-        <div class="main_fifth--section--desktop">
-          <h2 class="main_fifth--section--header">
-            <span class="main_fifth--section--header--span">TOP</span> SELLERS
-          </h2>
-          <div class="main_fifth--section--images">
-            <img src="images/main_fifth--1.png" alt="chocolate" class="main_fifth--section--images-element" />
-            <img src="images/main_fifth--2.png" alt="chocolate" class="main_fifth--section--images-element" />
-            <img src="images/main_fifth--3.png" alt="chocolate" class="main_fifth--section--images-element" />
-          </div>
-          <div class="main_fifth--section--bottom">
-            <p class="main_fifth--section--bottom--text">
-              Crazy enough chocolate originates from a bean just like the
-              coffee bean called Cacao. Cacao has been around for thousands of
-              years and was first discovered by the Native American tribe
-              called the Mayans.
-            </p>
-            <button class="main_fifth--section--bottom--button">
-              Buy now
-            </button>
-          </div>
-        </div>
-        <div class="main_fifth--section--mobile">
-          <h2 class="main_fifth--section--mobile--header">
-            <span class="main_fifth--section--header--span">TOP</span> SELLERS
-          </h2>
-          <div class="main_fifth--section--mobile--images">
-            <img src="images/main_fifth--1.png" alt="chocolate" class="main_fifth--section--mobile--image" />
-            <p class="main_fifth--section--mobile--images--text">
-              Crazy enough chocolate originates from a bean just like the
-              coffee bean called Cacao. Cacao has been around for thousands of
-              years and was first discovered by the Native American tribe
-              called the Mayans.
-            </p>
-            <div>
-              <img src="images/main_fifth--2.png" alt="chokolate" class="main_fifth--section--mobile--image" />
+  <body>
+    <main class="main">
+      <section class="main_fifth--section">
+        <div class="main_container">
+          <div class="main_fifth--section--desktop">
+            <h2 class="main_fifth--section--header">
+              <span class="main_fifth--section--header--span">TOP</span> SELLERS
+            </h2>
+            <div class="main_fifth--section--images">
+              <img
+                src="images/main_fifth--1.png"
+                alt="chocolate"
+                class="main_fifth--section--images-element"
+              />
+              <img
+                src="images/main_fifth--2.png"
+                alt="chocolate"
+                class="main_fifth--section--images-element"
+              />
+              <img
+                src="images/main_fifth--3.png"
+                alt="chocolate"
+                class="main_fifth--section--images-element"
+              />
             </div>
-
+            <div class="main_fifth--section--bottom">
+              <p class="main_fifth--section--bottom--text">
+                Crazy enough chocolate originates from a bean just like the
+                coffee bean called Cacao. Cacao has been around for thousands of
+                years and was first discovered by the Native American tribe
+                called the Mayans.
+              </p>
+              <button class="main_fifth--section--bottom--button">
+                Buy now
+              </button>
+            </div>
           </div>
-          <div class="main_fifth--section--mobile--button--wrapper">
-            <button class="main_fifth--section--bottom--button">
-              Buy now
-            </button>
+          <div class="main_fifth--section--mobile">
+            <h2 class="main_fifth--section--mobile--header">
+              <span class="main_fifth--section--header--span">TOP</span> SELLERS
+            </h2>
+            <div class="main_fifth--section--mobile--images">
+              <img
+                src="images/main_fifth--1.png"
+                alt="chocolate"
+                class="main_fifth--section--mobile--image"
+              />
+              <p class="main_fifth--section--mobile--images--text">
+                Crazy enough chocolate originates from a bean just like the
+                coffee bean called Cacao. Cacao has been around for thousands of
+                years and was first discovered by the Native American tribe
+                called the Mayans.
+              </p>
+              <div>
+                <img
+                  src="images/main_fifth--2.png"
+                  alt="chokolate"
+                  class="main_fifth--section--mobile--image"
+                />
+              </div>
+            </div>
+            <div class="main_fifth--section--mobile--button--wrapper">
+              <button class="main_fifth--section--bottom--button">
+                Buy now
+              </button>
+            </div>
+          </div>
+
+          <div class="order_buy--modal">
+            <div class="order_buy--modal--content">
+              <div class="order_buy--modal--close">
+                <img src="images/x-close.svg" alt="close" />
+              </div>
+              <div class="order_buy--modal--container">
+                <h2 class="order_buy--modal--title">
+                  <span class="order_buy--modal--title--span">BUY</span> NOW
+                </h2>
+                <div class="order_buy--modal--cards">
+                  <div class="order_buy--modal--cards--el">
+                    <img
+                      src="images/main--fifth--order-1.png"
+                      alt="chocolate"
+                    />
+                    <div class="order_buy--modal--cards--el--weight">100g</div>
+                  </div>
+                  <div class="order_buy--modal--cards--el">
+                    <img
+                      src="images/main--fifth--modal-2.png"
+                      alt="chocolate"
+                    />
+                    <div class="order_buy--modal--cards--el--weight">200g</div>
+                  </div>
+                  <div class="order_buy--modal--cards--el">
+                    <img
+                      src="images/main--fifth--order-3.png"
+                      alt="chocolate"
+                    />
+                    <div class="order_buy--modal--cards--el--weight">300g</div>
+                  </div>
+                </div>
+                <form class="order_buy--form">
+                  <div class="form_field">
+                    <label class="form_field--label">
+                      Personal information
+                      <div class="form_field--person--info">
+                        <input
+                          class="form_field--label--input"
+                          type="text"
+                          placeholder="Name"
+                        />
+                        <input
+                          class="form_field--label--input"
+                          type="text"
+                          placeholder="Surname"
+                        />
+                      </div>
+                    </label>
+                    <label class="form_field--label">
+                      Email
+                      <input
+                        class="form_field--label--input"
+                        type="text"
+                        placeholder="Enter your email"
+                      />
+                    </label>
+                    <!-- relative -->
+                    <label class="form_field--label">
+                      Phone number
+
+                      <input
+                        class="form_field--label--input"
+                        type="text"
+                        placeholder="Phone number"
+                      />
+                      <!-- absoulte; top: 43px; left: 24px -->
+                      <div class="mobile_elements">
+                        <img
+                          src="images/fifth-section-input-flag.png"
+                          alt="flag of Ukraine"
+                        />
+                        <span class="mobile_elements--nubmer">+380</span>
+                      </div>
+                    </label>
+                    <!-- relative -->
+                    <label class="form_field--label">
+                      Card number
+                      <input
+                        class="form_field--label--input"
+                        type="text"
+                        placeholder="Enter card"
+                        maxlength="16"
+                      />
+                      <!-- absoulte; top: 44px; right: 24px -->
+                      <div class="form_mastercard">
+                        <img
+                          src="images/Mastercard.svg"
+                          alt="mastercard logo"
+                        />
+                      </div>
+                    </label>
+                    <label class="form_field--label">
+                      Card number
+                      <textarea
+                     
+                        class="form_field--label--textarea"
+                        placeholder="Enter text"
+                      ></textarea>
+                      <!-- absoulte; top: 44px; right: 24px -->
+                      <img src="" alt="" />
+                    </label>
+                    <button class="form_submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="main_fifth--section--order--modal">
-          <div class="main_fifth--section--order--modal--container"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
