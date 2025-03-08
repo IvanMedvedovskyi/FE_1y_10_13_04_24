@@ -51,11 +51,16 @@
             text-align: center;
           }
         }
+        
       }
     }
   }
 }
-
+@media screen and (max-width: 600px){
+  .main_fifth--section .order_buy--modal{
+    width: 311px;
+  }
+}
 @media screen and (max-width: 400px) {
   .main {
     &_fifth {
