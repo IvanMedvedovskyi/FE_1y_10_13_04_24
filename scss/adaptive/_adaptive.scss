@@ -51,14 +51,61 @@
             text-align: center;
           }
         }
-        
       }
     }
   }
 }
-@media screen and (max-width: 600px){
-  .main_fifth--section .order_buy--modal{
+@media screen and (max-width: 600px) {
+  .main_fifth--section .order_buy--modal {
     width: 311px;
+    &--cards {
+      &--el {
+        width: 231px;
+        height: 257px;
+        img {
+          width: 167px;
+          height: 148px;
+          padding-top: 32px;
+          padding-left: 32px;
+        }
+        &--weight {
+          margin-left: 55px;
+          margin-top: 16px;
+        }
+      }
+
+      &--el:nth-child(2),
+      :nth-child(3) {
+        display: none;
+      }
+    }
+    .order_buy--form {
+      label:nth-child(3){
+        input{
+
+          padding-left: 24px;
+        }
+        .mobile_elements{
+          display: none
+        }
+      }
+      .form_field {
+        &--label:first-child{
+          .form_field--person--info{
+            flex-direction: column;
+          }
+        }
+        &:last-child{
+          textarea{
+            width: 250px;
+            height: 91px;
+          }
+        }
+        &--label--input {
+          width: 250px;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 400px) {

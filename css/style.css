@@ -400,11 +400,45 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .main_fifth--section .order_buy--form {
-    width: 100%;
-    height: 100%;
-    max-width: 311px;
-    max-height: 1007px;
+  .main_fifth--section .order_buy--modal {
+    width: 311px;
+  }
+  .main_fifth--section .order_buy--modal--cards--el {
+    width: 231px;
+    height: 257px;
+  }
+  .main_fifth--section .order_buy--modal--cards--el img {
+    width: 167px;
+    height: 148px;
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+  .main_fifth--section .order_buy--modal--cards--el--weight {
+    margin-left: 55px;
+    margin-top: 16px;
+  }
+  .main_fifth--section .order_buy--modal--cards--el:nth-child(2),
+  .main_fifth--section .order_buy--modal--cards :nth-child(3) {
+    display: none;
+  }
+  .main_fifth--section .order_buy--modal .order_buy--form label:nth-child(3) input {
+    padding-left: 24px;
+  }
+  .main_fifth--section .order_buy--modal .order_buy--form label:nth-child(3) .mobile_elements {
+    display: none;
+  }
+  .main_fifth--section .order_buy--modal .order_buy--form .form_field--label:first-child .form_field--person--info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_fifth--section .order_buy--modal .order_buy--form .form_field:last-child textarea {
+    width: 250px;
+    height: 91px;
+  }
+  .main_fifth--section .order_buy--modal .order_buy--form .form_field--label--input {
+    width: 250px;
   }
 }
 @media screen and (max-width: 400px) {
